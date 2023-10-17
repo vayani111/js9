@@ -1,0 +1,62 @@
+body {
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.dVrs0GCVZmT5v-W_wXzETAHaE5&pid=Api&P=0&h=220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 20px;
+}
+
+.timer-container, .stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #000000;
+    border: 2px solid rgb(7, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#timer, #stopwatch {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(227, 0, 0);
+    animation: colorChange 1s infinite alternate;
+}
+
+#timer-name, #stopwatch-name {
+    font-size: 24px;
+    color: rgb(255, 0, 0);
+    animation: colorChange 1s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(25, 15, 222);
+    }
+    50% {
+        color: rgb(209, 16, 16);
+    }
+    100%{
+        color: #33d313;
+    }
+}
+
+button {
+    background-color: rgb(255, 26, 26);
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.05);
+}

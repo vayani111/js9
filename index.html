@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeous Timer and Stylish Stopwatch</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div id="timer-name">Gorgeous Timer</div>
+        <div id="timer">00:00:00</div>
+        <div id="time-options">
+            <button onclick="setTime(60)">1 Minute</button>
+            <button onclick="setTime(600)">10 Minutes</button>
+            <button onclick="setTime(3600)">1 Hour</button>
+        </div>
+        <button id="resetTimerButton" onclick="resetTimer()">Reset</button>
+    </div>
+
+    <div class="stopwatch-container">
+        <div id="stopwatch-name">Stylish Stopwatch</div>
+        <div id="stopwatch">00:00:00.000</div>
+        <button id="startStopwatchButton" onclick="startStopwatch()">Start</button>
+        <button id="resetStopwatchButton" onclick="resetStopwatch()">Reset</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+   
